@@ -1,6 +1,5 @@
-
-main: main.c
-	gcc main.c ../src/image/image.c -o main -I../include -Wall -O2
+main: main.cpp
+	g++ main.cpp -o main -I./../include -L./../lib -limage
 
 clean:
 	rm main
